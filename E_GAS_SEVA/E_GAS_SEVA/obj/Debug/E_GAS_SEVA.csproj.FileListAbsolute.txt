@@ -1,0 +1,5 @@
+F:\csharp projects\E_GAS_SEVA\E_GAS_SEVA\bin\E_GAS_SEVA.dll
+F:\csharp projects\E_GAS_SEVA\E_GAS_SEVA\bin\E_GAS_SEVA.pdb
+F:\csharp projects\E_GAS_SEVA\E_GAS_SEVA\obj\Debug\ResolveAssemblyReference.cache
+F:\csharp projects\E_GAS_SEVA\E_GAS_SEVA\obj\Debug\E_GAS_SEVA.dll
+F:\csharp projects\E_GAS_SEVA\E_GAS_SEVA\obj\Debug\E_GAS_SEVA.pdb

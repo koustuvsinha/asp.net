@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B36D827-0D37-4957-8894-DB4D01D01263}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E_GAS_SEVA</RootNamespace>
+    <AssemblyName>E_GAS_SEVA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="company\add_dealer.aspx" />
+    <Content Include="company\tariff_subsidy.aspx" />
+    <Content Include="customer\account_history.aspx" />
+    <Content Include="company\assign_cylinder.aspx" />
+    <Content Include="comp_login_dealer.aspx" />
+    <Content Include="Customer_Care.aspx" />
+    <Content Include="cust_login.aspx" />
+    <Content Include="company\cylinder_data.aspx" />
+    <Content Include="company\dealer_data.aspx" />
+    <Content Include="cust_register.aspx" />
+    <Content Include="dealer\cust_database.aspx" />
+    <Content Include="dealer\cylinder_stock.aspx" />
+    <Content Include="dealer\oredr_request.aspx" />
+    <Content Include="dealer\request_cylinder.aspx" />
+    <Content Include="dealer\termination.aspx" />
+    <Content Include="dealer\transfer_request.aspx" />
+    <Content Include="dealer\validate_request.aspx" />
+    <Content Include="dealer\view_complaints.aspx" />
+    <Content Include="dealer_form.aspx" />
+    <Content Include="customer\delivery_status.aspx" />
+    <Content Include="guidelines.aspx" />
+    <Content Include="company\manage_cylinder.aspx" />
+    <Content Include="Image\23nandan6.jpg" />
+    <Content Include="Image\CreateNewAccount.png" />
+    <Content Include="Image\lpg_safety_img1.jpg" />
+    <Content Include="Image\news and press1.jpg" />
+    <Content Include="Image\referral-guidelines.jpg" />
+    <Content Include="Image\scfsf.jpg" />
+    <Content Include="Image\stacks_image_54_1.jpg" />
+    <Content Include="Image\table1.jpg" />
+    <Content Include="Image\table100.jpg" />
+    <Content Include="Image\tariff.jpg" />
+    <Content Include="Image\Untitled.jpg" />
+    <Content Include="Image\Untitled2.png" />
+    <Content Include="logout.aspx" />
+    <Content Include="news.aspx" />
+    <Content Include="new_connection.aspx" />
+    <Content Include="customer\online_booking.aspx" />
+    <Content Include="reactivate.aspx" />
+    <Content Include="company\refill.aspx" />
+    <Content Include="search_dist.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="tariff.aspx" />
+    <Content Include="customer\terminate_account.aspx" />
+    <Content Include="customer\transfer.aspx" />
+    <Content Include="transparency.aspx" />
+    <Content Include="transparency_report.aspx" />
+    <Content Include="customer\update_account.aspx" />
+    <Content Include="company\view_cust_data.aspx" />
+    <Content Include="customer\renewal.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="index.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\city_keeper.cs" />
+    <Compile Include="classes\complaint_keeper.cs" />
+    <Compile Include="classes\customer_class.cs" />
+    <Compile Include="classes\customer_manager.cs" />
+    <Compile Include="classes\cylinder_class.cs" />
+    <Compile Include="classes\cylinder_comp_keeper.cs" />
+    <Compile Include="classes\cylinder_dealer_keeper.cs" />
+    <Compile Include="classes\dealer_class.cs" />
+    <Compile Include="classes\dealer_keeper.cs" />
+    <Compile Include="classes\dealer_manager.cs" />
+    <Compile Include="classes\encryption.cs" />
+    <Compile Include="classes\order_cust.cs" />
+    <Compile Include="classes\order_cust_keeper.cs" />
+    <Compile Include="classes\order_dealer_keeper.cs" />
+    <Compile Include="classes\port_class.cs" />
+    <Compile Include="classes\port_keeper.cs" />
+    <Compile Include="company\add_dealer.aspx.cs">
+      <DependentUpon>add_dealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\add_dealer.aspx.designer.cs">
+      <DependentUpon>add_dealer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\tariff_subsidy.aspx.cs">
+      <DependentUpon>tariff_subsidy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\tariff_subsidy.aspx.designer.cs">
+      <DependentUpon>tariff_subsidy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer\account_history.aspx.cs">
+      <DependentUpon>account_history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer\account_history.aspx.designer.cs">
+      <DependentUpon>account_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\assign_cylinder.aspx.cs">
+      <DependentUpon>assign_cylinder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\assign_cylinder.aspx.designer.cs">
+      <DependentUpon>assign_cylinder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comp_login_dealer.aspx.cs">
+      <DependentUpon>comp_login_dealer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comp_login_dealer.aspx.designer.cs">
+      <DependentUpon>comp_login_dealer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Care.aspx.cs">
+      <DependentUpon>Customer_Care.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer_Care.aspx.designer.cs">
+      <DependentUpon>Customer_Care.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\customer_keeper.cs" />
+    <Compile Include="cust_login.aspx.cs">
+      <DependentUpon>cust_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cust_login.aspx.designer.cs">
+      <DependentUpon>cust_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\cylinder_data.aspx.cs">
+      <DependentUpon>cylinder_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\cylinder_data.aspx.designer.cs">
+      <DependentUpon>cylinder_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\dealer_data.aspx.cs">
+      <DependentUpon>dealer_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\dealer_data.aspx.designer.cs">
+      <DependentUpon>dealer_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cust_register.aspx.cs">
+      <DependentUpon>cust_register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cust_register.aspx.designer.cs">
+      <DependentUpon>cust_register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\cust_database.aspx.cs">
+      <DependentUpon>cust_database.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\cust_database.aspx.designer.cs">
+      <DependentUpon>cust_database.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\cylinder_stock.aspx.cs">
+      <DependentUpon>cylinder_stock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\cylinder_stock.aspx.designer.cs">
+      <DependentUpon>cylinder_stock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\oredr_request.aspx.cs">
+      <DependentUpon>oredr_request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\oredr_request.aspx.designer.cs">
+      <DependentUpon>oredr_request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\request_cylinder.aspx.cs">
+      <DependentUpon>request_cylinder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\request_cylinder.aspx.designer.cs">
+      <DependentUpon>request_cylinder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\termination.aspx.cs">
+      <DependentUpon>termination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\termination.aspx.designer.cs">
+      <DependentUpon>termination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\transfer_request.aspx.cs">
+      <DependentUpon>transfer_request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\transfer_request.aspx.designer.cs">
+      <DependentUpon>transfer_request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\validate_request.aspx.cs">
+      <DependentUpon>validate_request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\validate_request.aspx.designer.cs">
+      <DependentUpon>validate_request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer\view_complaints.aspx.cs">
+      <DependentUpon>view_complaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer\view_complaints.aspx.designer.cs">
+      <DependentUpon>view_complaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dealer_form.aspx.cs">
+      <DependentUpon>dealer_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dealer_form.aspx.designer.cs">
+      <DependentUpon>dealer_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer\delivery_status.aspx.cs">
+      <DependentUpon>delivery_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer\delivery_status.aspx.designer.cs">
+      <DependentUpon>delivery_status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="guidelines.aspx.cs">
+      <DependentUpon>guidelines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guidelines.aspx.designer.cs">
+      <DependentUpon>guidelines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\manage_cylinder.aspx.cs">
+      <DependentUpon>manage_cylinder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\manage_cylinder.aspx.designer.cs">
+      <DependentUpon>manage_cylinder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="new_connection.aspx.cs">
+      <DependentUpon>new_connection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="new_connection.aspx.designer.cs">
+      <DependentUpon>new_connection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer\online_booking.aspx.cs">
+      <DependentUpon>online_booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer\online_booking.aspx.designer.cs">
+      <DependentUpon>online_booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reactivate.aspx.cs">
+      <DependentUpon>reactivate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reactivate.aspx.designer.cs">
+      <DependentUpon>reactivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\refill.aspx.cs">
+      <DependentUpon>refill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\refill.aspx.designer.cs">
+      <DependentUpon>refill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search_dist.aspx.cs">
+      <DependentUpon>search_dist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search_dist.aspx.designer.cs">
+      <DependentUpon>search_dist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tariff.aspx.cs">
+      <DependentUpon>tariff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tariff.aspx.designer.cs">
+      <DependentUpon>tariff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer\terminate_account.aspx.cs">
+      <DependentUpon>terminate_account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer\terminate_account.aspx.designer.cs">
+      <DependentUpon>terminate_account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer\transfer.aspx.cs">
+      <DependentUpon>transfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer\transfer.aspx.designer.cs">
+      <DependentUpon>transfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transparency.aspx.cs">
+      <DependentUpon>transparency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transparency.aspx.designer.cs">
+      <DependentUpon>transparency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transparency_report.aspx.cs">
+      <DependentUpon>transparency_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transparency_report.aspx.designer.cs">
+      <DependentUpon>transparency_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer\update_account.aspx.cs">
+      <DependentUpon>update_account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer\update_account.aspx.designer.cs">
+      <DependentUpon>update_account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="company\view_cust_data.aspx.cs">
+      <DependentUpon>view_cust_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\view_cust_data.aspx.designer.cs">
+      <DependentUpon>view_cust_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customer\renewal.aspx.cs">
+      <DependentUpon>renewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customer\renewal.aspx.designer.cs">
+      <DependentUpon>renewal.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49172</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

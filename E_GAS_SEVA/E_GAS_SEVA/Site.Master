@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="E_GAS_SEVA.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    E GAS SEva
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                You are not Logged in</div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/index.aspx" Text="Home"/>
+                        <asp:MenuItem Text="GET LPG" Value="GET LPG">
+                            <asp:MenuItem Text="New Connection" Value="New Connection"></asp:MenuItem>
+                            <asp:MenuItem Text="Transfer Connection" Value="Transfer Connection">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="How do i reactivate?" Value="How do i reactivate?">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Search Distributor" Value="Search Distributor">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Tariff" Value="Tariff"></asp:MenuItem>
+                        <asp:MenuItem Text="Customer Care" Value="Customer Care"></asp:MenuItem>
+                        <asp:MenuItem Text="Transparency Portal" Value="Transparency Portal">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Guidelines &amp; Safety Tips" 
+                            Value="Guidelines &amp; Safety Tips"></asp:MenuItem>
+                        <asp:MenuItem Text="Login" Value="Login">
+                            <asp:MenuItem Text="Customer Login" Value="Customer Login"></asp:MenuItem>
+                            <asp:MenuItem Text="Distributor Login" Value="Distributor Login"></asp:MenuItem>
+                            <asp:MenuItem Text="Company Login" Value="Company Login"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About Us" Value="About Us">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="News and Press Release" Value="News and Press Release">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            Main Page</div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    <p>
+        &nbsp;</p>
+    <asp:Panel ID="Panel1" runat="server" 
+        style="z-index: 1; left: 0px; top: 226px; position: absolute; height: 154px; width: 1036px">
+        <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+        <asp:TextBox ID="TextBox1" runat="server" 
+            style="z-index: 1; left: -32px; top: -7px; position: absolute; height: 150px; width: 867px"></asp:TextBox>
+    </asp:Panel>
+    <p>
+        &nbsp;</p>
+    </form>
+</body>
+</html>
